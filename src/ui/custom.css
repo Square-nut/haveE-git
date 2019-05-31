@@ -1,0 +1,48 @@
+.h50 {
+  height: 50px;
+}
+
+.w300 {
+  width: 300px;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.mt25 {
+  margin-top: 25px;
+}
+
+
+.bodgray {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.primary-color {
+  color: #2290e8 !important;
+}
+
+.primary-btn {
+  border-radius: 5px;
+  border: 0;
+  background: #2290e8;
+  color: #ffffff;
+}

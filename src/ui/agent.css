@@ -1,0 +1,66 @@
+.agent {
+  width: 1200px;
+}
+
+.agent-form {
+  width: 500px;
+}
+
+.calc {
+  width: calc(100% - 540px);
+}
+
+.agent-head {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 40px;
+  background: #f8f8f8;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.company-desc-panel {
+  position: relative;
+}
+
+/* .company-desc-panel .words {
+  position: absolute;
+} */
+.agent-right {
+  width: 510px;
+  height: 150px;
+  margin: auto;
+  padding-left: 40px;
+  color: #a8a8a8;
+  background: #f9f9f9;
+}
+
+.error {
+  color: red;
+}
+
+.service-panel {
+  width: 500px;
+  height: 100px;
+  margin: 20px auto;
+  padding-top: 39px;
+  padding-left: 67px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+
+}
+
+.result-success,
+.result-fail {
+  margin-top: 180px;
+}
+
+.color999 {
+  color: #999999;
+}
+
+.vam {
+  vertical-align: bottom;
+}

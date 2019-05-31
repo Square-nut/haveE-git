@@ -1,0 +1,940 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+
+q:before, q:after {
+	content: "";
+}
+
+abbr, acronym {
+	border: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	font-size: 1.4rem;
+	font-family: 'Microsoft Yahei', sans-serif;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a, button, input {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	outline: none;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.none {
+	display: none!important;
+}
+
+.center {
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-f1f1f1 {
+	background: #F1F1F1;
+}
+
+.seo-keyword {
+	margin: 30px 0;
+}
+
+.sk-h2 {
+	font-size: 32px;
+	font-weight: bold;
+	padding: 0 0 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #00A0E9;
+}
+
+.sk-c {
+	color: #00A0E9;
+}
+
+.sk-filter {
+	border-bottom: 1px dashed #DBDBDB;
+	margin-bottom: 30px;
+}
+
+.sk-filter-item {
+	margin-bottom: 10px;
+}
+
+.sk-filter-title {
+	float: left;
+	font-size: 18px;
+	width: 110px;
+	line-height: 36px;
+}
+
+.sk-filter-item-block {
+	padding-left: 110px;
+}
+
+.sk-filter-item-block a {
+	float: left;
+	font-size: 16px;
+	padding: 0 20px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #F6F6F6;
+	margin: 0 20px 20px 0;
+}
+
+.sk-filter-item-block a:hover {
+	color: #fff;
+	background-color: #00A0E9;
+}
+
+.sk-filter-result {
+	margin-bottom: 20px;
+}
+
+.sk-r {
+	float: left;
+	font-size: 16px;
+	margin: 0 20px 10px 0;
+	padding: 10px 0;
+}
+
+.sk-r:hover {
+	color: #00A0E9;
+	text-decoration: underline;
+}
+
+.sk-pager {
+	padding: 0 30px;
+	text-align: right;
+}
+
+.sk-pager a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 13px;
+	color: #666;
+	margin: 0 4px;
+	border-radius: 50%;
+}
+
+.sk-pager a:hover {
+	color: #00A0E9;
+}
+
+.sk-pager .active {
+	color: #fff;
+	background-color: #00A0E9;
+}
+
+.sk-pager .next, .sk-pager .prev {
+	font-size: 18px;
+	font-family: serif;
+	font-weight: bold;
+}
+
+.left-col {
+	float: left;
+	width: 880px;
+	margin: 0 20px 0 0;
+}
+
+.right-col {
+	margin-left: 900px;
+	width: 300px;
+}
+
+.sk-banner img {
+	display: block;
+	max-width: 100%;
+}
+
+.crumb {
+	margin: 30px 0 10px;
+}
+
+.crumb a:hover {
+	color: #00A0E9;
+}
+
+.sk-keyword-h2 {
+	padding: 0;
+	border: none;
+	margin-bottom: 15px;
+}
+
+.sk-case-item {
+	float: left;
+	width: 400px;
+	margin: 0 18px 30px 0;
+}
+
+.sk-case-item.even {
+	margin-right: 0;
+}
+
+.sk-case-img {
+	width: 400px;
+	height: 219px;
+	margin-bottom: 16px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 1px 1px 5px 0 rgba(7, 0, 2, 0.4);
+}
+
+.sk-case-img img {
+	display: block;
+	max-width: 100%;
+}
+
+.sk-case-item a:hover .sk-case-img {
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+
+.sk-case {
+    counter-reset: rank 0;
+}
+
+.sk-case .sk-case-rank {
+    counter-increment: rank;
+    position: relative;
+}
+
+.sk-case .sk-case-rank:before {
+    content: counter(rank);
+    position: absolute;
+    z-index: 1;
+    width: 127px;
+    height: 60px;
+    background: url(../../images/anliku/sk-case-rank-bg.png) no-repeat center;
+    left: -10px;
+    top: 0;
+    box-sizing: border-box;
+    padding: 7px 20px 10px 10px;
+    text-align: center;
+    line-height: 43px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.sk-case .sk-case-item:nth-child(1) .sk-case-rank:before {
+    height: 78px;
+    background: url(../../images/anliku/sk-case-first-bg.png) center bottom;
+    background-size: 127px auto;
+    padding: 23px 20px 10px 40px;
+    top: -16px;
+}
+
+.sk-case .sk-case-item:nth-child(2) .sk-case-rank:before {
+    height: 61px;
+    background-image: url(../../images/anliku/sk-case-second-bg.png);
+    padding-left: 40px;
+}
+
+.sk-case .sk-case-item:nth-child(3) .sk-case-rank:before {
+    height: 61px;
+    background-image: url(../../images/anliku/sk-case-third-bg.png);
+    padding-left: 40px;
+}
+
+.sk-case .sk-case-item:nth-child(-n+9) .sk-case-rank:before {
+	content: "0" counter(rank);
+}
+
+/*置顶认领*/
+
+.sk-case-top-block + .anliku-block .sk-case {
+    counter-reset: rank 1;
+}
+
+.sk-case-top-block + .anliku-block .sk-case .sk-case-item:nth-child(1) .sk-case-rank:before {
+    height: 61px;
+    background-image: url(../../images/anliku/sk-case-second-bg.png);
+    padding-left: 40px;
+    padding: 7px 20px 10px 40px;
+    top: 0;
+}
+
+.sk-case-top-block + .anliku-block .sk-case .sk-case-item:nth-child(2) .sk-case-rank:before {
+    height: 61px;
+    background-image: url(../../images/anliku/sk-case-third-bg.png);
+    padding-left: 40px;
+}
+
+.sk-case-top-block + .anliku-block .sk-case .sk-case-item:nth-child(3) .sk-case-rank:before {
+    height: 60px;
+    background-image: url(../../images/anliku/sk-case-rank-bg.png);
+    padding-left: 10px;
+}
+
+.sk-case-info {
+	margin-bottom: 8px;
+}
+
+.sk-case-intro {
+	height: 63px;
+	overflow: hidden;
+}
+
+.sk-case-bold {
+	font-weight: bold;
+	vertical-align: middle;
+	color: #666;
+}
+
+.sk-case-name {
+	display: inline-block;
+	width: 324px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	vertical-align: middle;
+	color: #666;
+}
+
+.sk-case-item a:hover .sk-case-name {
+	color: #00A0E9;
+}
+
+.sk-case-show .sk-case-name {
+	width: 730px;
+	color: #666;
+}
+
+.sk-case-des {
+	vertical-align: middle;
+	text-align: justify;
+	color: #666;
+}
+
+.anliku-block.sk-right-info {
+	padding: 20px;
+}
+
+.sk-right-info-p {
+	font-size: 14px;
+	line-height: 24px;
+	text-indent: 1em;
+	text-align: justify;
+	color: #666;
+}
+
+.sk-case-top-info {
+    position: relative;
+    padding-left: 70px;
+}
+
+.sk-case-top-info:before {
+	content: "1";
+	position: absolute;
+	width: 81px;
+	height: 128px;
+	background: url(../../images/anliku/sk-case-NO1-bg.png) no-repeat center;
+	left: -32px;
+	top: -30px;
+	box-sizing: border-box;
+	padding: 32px 3px 30px 3px;
+	text-align: center;
+	line-height: 66px;
+	color: #fff;
+	font-size: 47px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sk-case-top {
+    float: none;
+    align-items: flex-start;
+}
+
+.sk-case-top a {
+	flex: 1;
+	position: relative;
+}
+
+.sk-case-top a:before {
+	content: "金牌企业";
+	position: absolute;
+	width: 211px;
+	height: 91px;
+	background: url(../../images/anliku/sk-case-top-bg.png) no-repeat center;
+	z-index: 1;
+	left: -10px;
+	top: -8px;
+	box-sizing: border-box;
+	padding: 16px 28px 8px 80px;
+	text-align: center;
+	line-height: 67px;
+	color: #fff;
+	font-size: 24px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sk-case-top-info a:hover .sk-case-name {
+	color: #00A0E9;
+}
+
+.sk-case-top .renling-right-info {
+    box-sizing: border-box;
+    height: 432px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.sk-case-top .renling-info-item {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.sk-case-top .sk-case-img {
+	width: 100%;
+	height: 432px;
+}
+
+.sk-case-top .renling-info-txt.renling-info-business {
+    max-height: 132px;
+    overflow: auto;
+    padding-right: 5px;
+}
+
+.sk-case-top-img {
+    justify-content: flex-start;
+}
+
+.sk-case-top-img .img-block {
+    margin: 0 0 0 49px;
+    box-shadow: 1px 1px 5px 0 rgba(7, 0, 2, 0.4);
+    width: 240px;
+    height: 390px;
+}
+
+.sk-case-top-img .img-block:first-of-type {
+	margin-left: 0;
+}
+
+.sk-case-top-img img {
+    width: 240px;
+    height: 390px;
+}
+
+.sk-case-show-top-img {
+    margin-bottom: 30px;
+}
+
+.sk-case-show-top-img .img-block {
+    margin-left: 80px;
+}
+
+.sk-case-show {
+	padding-bottom: 12px;
+}
+
+.sk-case-show .sk-case-img {
+	width: 100%;
+	height: 900px;
+	margin-bottom: 20px;
+}
+
+.sk-case-show .sk-case-img img {
+	box-shadow: none;
+}
+
+.sk-case-show .sk-case-info {
+	line-height: 24px;
+}
+
+.sk-contact {
+	background: url(../../images/anliku/sk-contact-bg.jpg) no-repeat center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.sk-contact-left {
+	float: left;
+	padding: 10px 20px;
+}
+
+.sk-contact-right {
+	float: right;
+	padding: 14px 20px 0;
+}
+
+.sk-contact-h2 {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.sk-contact-p {
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.sk-contact-info {
+	margin-bottom: 5px;
+}
+
+.sk-contact-qq {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding: 4px 8px;
+	width: 100px;
+	border-radius: 20px;
+	margin-right: 20px;
+}
+
+.sk-contact-qq:hover {
+	background-color: #00A0E9;
+	border-color: #00A0E9;
+}
+
+.sk-contact-qq:before {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 18px;
+	height: 19px;
+	background: url(../../images/anliku/qq.png) no-repeat center;
+	margin: 0 10px;
+}
+
+.sk-contact-baidu {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding: 4px 8px;
+	width: 100px;
+	border-radius: 20px;
+}
+
+.sk-contact-baidu:hover {
+	background-color: #00A0E9;
+	border-color: #00A0E9;
+}
+
+.sk-contact-baidu:before {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 18px;
+	height: 19px;
+	background: url(../../images/anliku/baidu.png) no-repeat center;
+	margin: 0 10px;
+}
+
+.sk-contact-phone {
+	text-align: right;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.sk-case-list {
+	margin-bottom: 20px;
+}
+
+.sk-case-list-h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.sk-case-list-item {
+	float: left;
+	width: 32.3%;
+	margin: 0 1% 15px 0;
+}
+
+.sk-case-list-img {
+	width: 100%;
+	height: 162px;
+	overflow: hidden;
+}
+
+.sk-case-list-img img {
+	display: block;
+	max-width: 100%;
+}
+
+.sk-case-list-name {
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	background-color: #F6F6F6;
+	font-size: 12px;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	padding: 0 10px;
+}
+
+.sk-case-list-item:hover .sk-case-list-name {
+	background-color: #ddd;
+}
+
+.sk-designer {
+	width: 868px;
+	padding: 20px 0 20px 30px;
+	margin: 50px 0 30px -30px;
+	border-top: 3px solid #00A0E9;
+}
+
+.sk-designer-h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.sk-designer-left {
+	float: left;
+	width: 476px;
+	height: 240px;
+	background-color: #F6F6F6;
+}
+
+.sk-designer-img {
+	float: left;
+	width: 173px;
+	height: 240px;
+	position: relative;
+}
+
+.sk-designer-img img {
+	display: block;
+	max-width: 100%;
+}
+
+.sk-designer-job {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sk-designer-c {
+	color: #fff;
+	display: inline-block;
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #FF4E00;
+}
+
+.sk-designer-info {
+	padding: 0 20px 0 193px;
+	height: 240px;
+}
+
+.sk-designer-name {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.stars {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.star {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url(../images/seo-keyword/star.png) no-repeat;
+}
+
+.sk-designer-block {
+	margin: 15px 0;
+}
+
+.sk-designer-p {
+	font-size: 12px;
+}
+
+.sk-designer-p strong {
+	font-weight: bold;
+}
+
+.sk-designer-right {
+	float: right;
+	width: 383px;
+	height: 240px;
+	background-color: #F6F6F6;
+}
+
+.sk-designer-h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 20px 30px;
+}
+
+.sk-designer-show {
+	padding: 0 76px;
+}
+
+.sk-designer-show-img {
+	display: block;
+	width: 100%;
+}
+
+.sk-designer-show-name {
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	padding: 5px 0;
+}
+
+.mCSB_inside>.mCSB_container {
+	margin: 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	background-color: #eee;
+	background-color: rgba(238, 238, 238, .75);
+	filter: "alpha(opacity=75)";
+	-ms-filter: "alpha(opacity=75)";
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #999;
+	background-color: rgba(0, 0, 0, .4);
+	filter: "alpha(opacity=40)";
+	-ms-filter: "alpha(opacity=40)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background-color: #666;
+	background-color: rgba(0, 0, 0, .7);
+	filter: "alpha(opacity=70)";
+	-ms-filter: "alpha(opacity=70)"
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+	background-color: #666;
+	background-color: rgba(0, 0, 0, .7);
+	filter: "alpha(opacity=70)";
+	-ms-filter: "alpha(opacity=70)"
+}
+
+.sk-warning {
+	background-color: #f5f5f5;
+	padding: 20px;
+	position: relative;
+}
+
+.sk-warning p {
+	font-size: 12px;
+	color: #888;
+	margin: 5px 0;
+}
+
+.sk-note {
+	font-size: 12px;
+	line-height: 22px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.sk-related-case {
+	margin-top: 30px;
+}
+
+.sk-related-case-list {
+	font-size: 0;
+}
+
+.sk-related-case-list a {
+	font-size: 14px;
+	color: #00A0E9;
+	display: inline-block;
+	margin: 0 15px 10px 0;
+}
+
+.sk-related-case-list a:hover {
+	text-decoration: underline;
+}
+
+/**/
+
+.anliku-advertisement {
+	height: 300px;
+	background-color: #F6F6F6;
+}
+
+/*案例库认领&&案例库页面样式调整*/
+
+.anliku {
+	background-color: #F7F7F7;
+}
+
+.anliku-block {
+	border: 1px solid #E5E5E5;
+	background-color: #fff;
+	padding: 25px 30px;
+	margin-bottom: 20px;
+}
+
+.sk-banner {
+	margin-bottom: 20px;
+}
+
+.renling-a {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 90px;
+	height: 26px;
+	line-height: 26px;
+}
+
+.renling-right-info {
+	padding: 20px;
+}
+
+.renling-info {
+	overflow: hidden;
+}
+
+.renling-info-item {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #E5E5E5;
+}
+
+.renling-info-title {
+	position: relative;
+	padding-left: 7px;
+	margin-bottom: 5px;
+}
+
+.renling-info-title:before {
+	content: "";
+	position: absolute;
+	border-left: 2px solid #20B09F;
+	height: 12px;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.renling-info-txt {
+	color: #666;
+	line-height: 22px;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+.renling-info-company {
+	font-weight: bold;
+	line-height: 22px;
+	text-align: justify;
+}
+
+.renling-btn {
+	padding: 15px 0;
+	text-align: center;
+}
+
+.renling-btn-a {
+	width: 175px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 18px;
+}
+
+.renling-top-advertisement {
+	margin: 22px 0 20px;
+	height: 80px;
+	background-color: #ccc;
+}
+
+.renling-right-weihu {
+    padding: 20px 0 0;
+}
+
+.renling-weihu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.renling-weihu-a {
+    color: #333;
+    font-size: 12px;
+}
+
+.renling-weihu-a:hover {
+    color: #20B09F;
+}
+
+.renling-show {
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-top: 1px dashed #E5E5E5;
+}
+
+.renling-show-p {
+    color: #666;
+}
+
+.renling-show-em {
+    margin-right: 5px;
+    color: #f00;
+}
+
+.text-no-wrap {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

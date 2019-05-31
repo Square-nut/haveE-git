@@ -1,0 +1,82 @@
+.mr12 {
+  margin-right: 12px;
+}
+
+.h30 {
+  height: 30px;
+}
+
+.add-shop {
+  padding: 30px;
+  font-family: '微软雅黑';
+  width: 1200px;
+}
+
+.color999 {
+  color: #999999;
+}
+
+.add-shop-top {
+  height: 150px;
+}
+
+.bort {
+  border-top: 1px solid #d9d9d9;
+}
+
+.add-shop-protocol {
+  padding-top: 40px;
+}
+
+.shop-template-label {
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.shop-template-radio {
+  visibility: hidden;
+}
+
+.shop-template-radio:checked+label {
+  background: #f0f4ff;
+  color: #acc1f2;
+}
+
+.mt25 {
+  margin-top: 25px;
+}
+
+.pt25 {
+  padding-top: 25px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.add-shop-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.service-panel {
+  width: 500px;
+  height: 100px;
+  margin: auto;
+  padding-top: 39px;
+  padding-left: 67px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+
+}
+
+.result-success,
+.result-fail {
+  margin-top: 90px;
+}

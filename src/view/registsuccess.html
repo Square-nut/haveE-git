@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head name="seo">
+        <title>中企动力-注册</title>
+        <link rel="stylesheet" href="/sso/common.css">
+        <link rel="stylesheet" href="/sso/fonts/iconfont.css">
+        <link rel="stylesheet" href="/sso/login.css">
+        <script src="environment.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <div name="main">
+        <div class="regist-content">
+            <div class="welcome-page">
+                <!-- <div class="reg-logo">
+                    <a href="/domain/?ch=mkt_31519" target="_blank"><img
+                            src="{:cdn('PUBLIC')}/home/images/reg-success.png" alt=""></a>
+                </div> -->
+                <div class="info">
+                    <div class="title"><i class=" iconfont icon-right"></i>
+                        <h2 class="text-result">欢迎您注册中企会员<br>我们将为您提供优质的在线服务与您一起构建企业信息化服务</h2>
+                    </div>
+                    <p class="text-id">
+                        我们为您提供了一个会员账号:
+                        <span class="id blue" id="account"></span> ,
+                        <br> 您可以使用会员账号登录或手机号登录
+                    </p>
+                    <div class="link">
+                        <p>现在您可以</p>
+                        <div class="btn" id="visitHomepage">继续访问官网</div>
+                        <div class="btn blue"><a href="javascript:void(0);" id="loginMemCenter" class="blue">登录会员中心</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name="js">
+        <script src="./sso/plugins/jquery/jquery.min.js"></script>
+        <script src="./sso/console.js"></script>
+        <script src="./sso/v30/scripts/service/service.js"></script>
+        <script src="./sso/v30/scripts/common.js"></script>
+        <!-- <script src="/scripts/console"></script>
+        <script src="{:cdn('V30')}/scripts/sso/service/service.js{$ver}"></script>
+        <script src="{:cdn('V30')}/scripts/sso/common.js{$ver}"></script> -->
+        <script>
+            //获取url中的参数
+            function getUrlParam(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+                var r = window.location.search.substr(1).match(reg); //匹配目标参数
+                if (r != null) return unescape(r[2]);
+                return null; //返回参数值
+            }
+            $("#account").text(getUrlParam('user'));
+            $("#visitHomepage").bind('click', function () {
+                if ((window.location.href).indexOf("service") !== -1) {
+                    window.location.href = getUrlParam('service');
+                } else {
+                    window.location.href = "http://www.aiyouyi.cn";
+                }
+            });
+            $("#loginMemCenter").bind('click', function () {
+                window.location.href = "http://new-console.aiyouyi.cn";
+                // window.location.href = getplatform() + '/platform';
+            });
+        </script>
+        <!-- <script language="javascript" src="http://webapp.data.yun300.cn/public/js/visittrack.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            var visittrack_siteId = '300cn'; //网站标识
+            var visittrack_url = 'http://market.data.yun300.cn/a.png';
+            VisitTrack.visittrack_log(visittrack_siteId, visittrack_url);
+        </script> -->
+    </div>
+
+    </body>
+
+</html>
