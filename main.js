@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from '@/route/index'
-console.log("main.js353545343545");
 
 new Vue({
   el: '#app',
