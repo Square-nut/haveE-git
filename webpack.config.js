@@ -4,11 +4,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-console.log(__dirname)
 
 function resolve(dir) {
   return path.join(__dirname, '/', dir)
 }
+
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: './main.js',
@@ -44,11 +44,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['*', '.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      '@view': resolve('src') + '/view'
+      '@view': resolve('src') + '/view',
 
     }
   },
@@ -72,11 +72,12 @@ if (process.env.NODE_ENV === 'production') {
     new HtmlWebpackPlugin({
       title: 'PRODUCTION prerender-spa-plugin',
       template: 'index.html',
-      filename: path.resolve(__dirname, 'dist/index.html')
+      filename: path.resolve(__dirname, 'dist/index.html'),
+      favicon: 'favicon.ico'
     }),
     new PrerenderSPAPlugin({
       staticDir: path.join(__dirname, 'dist'),
-      routes: ['/', '/about', '/contact'],
+      routes: ['/', '/home', '/contact'],
 
       renderer: new Renderer({
         inject: {
@@ -98,7 +99,8 @@ if (process.env.NODE_ENV === 'production') {
     new HtmlWebpackPlugin({
       title: 'DEVELOPMENT prerender-spa-plugin',
       template: 'index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      favicon: 'favicon.ico'
     }),
   ])
 }
