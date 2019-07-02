@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App'
-import router from '@/route/index'
+import {
+  router
+} from '@/route/index.js'
 
 new Vue({
   el: '#app',

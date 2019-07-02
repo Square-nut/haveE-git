@@ -57,8 +57,7 @@
                    checked
                    class="vam">
             <label for="personal-user"
-                   class="mr10"
-                   class="vam">有翼新零售</label>
+                   class="mr10 vam">有翼新零售</label>
             <input id="company-user"
                    type="radio"
                    value="2"

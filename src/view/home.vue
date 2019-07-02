@@ -10,8 +10,8 @@
             <div class="content-wrapper">
               <h3>有翼 新零售</h3>
               <p class="font-lighter">线上零售行业品牌电商、门店零售行业解决方案</p>
-              <a class="button primary try-free-wsc"
-                 href="/add-shop.html?dictItemParentCode=NRetail_Shop&skuId=B4C95698100A435C9B747E58CCF14FFE">免费试用</a>
+              <router-link class="button primary try-free-wsc"
+                           to="/add-shop?dictItemParentCode=NRetail_Shop&skuId=B4C95698100A435C9B747E58CCF14FFE">免费试用</router-link>
               <small class="font-lighter">或致电 010 - 1234 5678</small>
             </div>
           </div>
@@ -24,7 +24,7 @@
                 <span>服务于广大实体行业，提供客户沉淀、提升复购、</span><br><span>低成本拓客的线下门店解决方案</span>
               </p>
               <a class="button primary try-free-linshou"
-                 href="/add-shop.html?dictItemParentCode=NSever_GEN&skuId=32C3F7EF28264A1A88607F357D880B19">免费试用</a>
+                 to="/add-shop?dictItemParentCode=NSever_GEN&skuId=32C3F7EF28264A1A88607F357D880B19">免费试用</a>
               <small class="font-lighter">或致电 010 - 1234 5678</small>
             </div>
           </div>
@@ -224,3 +224,5 @@ export default {
   }
 }
 </script>
+<style scoped>
+</style>
