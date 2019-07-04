@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--header-->
-    <Nav-bar></Nav-bar>
+    <Navbar></Navbar>
     <!--header/-->
     <!--banner-->
     <div class="banner">
@@ -39,26 +39,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="banner">
-      <el-carousel trigger="click"
-                   class=""
-                   height="150px">
-        <el-carousel-item v-for="item in swiperList"
-                          :key="item.id">
-          <div class="swiper-slide slide-1"
-               :style="`background-image:url(${item.bgURL})`">
-            <div class="content-wrapper">
-              <h3>{{item.name}}</h3>
-              <p class="font-lighter"
-                 v-html="item.desc"></p>
-              <a class="button primary try-free-wsc"
-                 to="">免费试用</a>
-              <small class="font-lighter">或致电 010 - 1234 5678</small>
-            </div>
-          </div>
-        </el-carousel-item>
-      </el-carousel>
-    </div> -->
     <!--banner/-->
     <!--商业模式-->
     <div class="model-con">

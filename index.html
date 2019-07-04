@@ -5,16 +5,44 @@
         <meta charset="utf-8">
         <title><%= htmlWebpackPlugin.options.title %></title>
         <link rel="stylesheet" href="/src/ui/public.css">
+        <link rel="stylesheet" href="/src/ui/swiper.min.css">
         <!-- 引入样式 -->
         <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
         <!-- 引入组件库 -->
         <script src="https://unpkg.com/element-ui/lib/index.js"></script>
         <script type="text/javascript" src="/src/uitl/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="/src/uitl/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="/src/uitl/swiper.min.js"></script>
+        <script src="/environment.js"></script>
     </head>
 
     <body>
         <div id="app"></div>
     </body>
+    <script>
+        $(".btn-login").attr('href', __ce.CASURL + '?service=' + encodeURIComponent(window
+            .location.href))
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        $(".banner").hover(function () {
+            $(".no-visual").show();
+        }, function () {
+            $(".no-visual").hide();
+        })
+    </script>
 
 </html>
