@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!--header-->
-    <Navbar></Navbar>
-    <!--header/-->
     <!--banner-->
     <div class="banner">
       <div class="swiper-container">
@@ -219,11 +216,7 @@
   </div>
 </template>
 <script>
-import Navbar from './components/nav-bar'
 export default {
-  components: {
-    Navbar
-  },
   data () {
     return {
       swiperList: [{

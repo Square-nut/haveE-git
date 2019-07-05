@@ -70,7 +70,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new HtmlWebpackPlugin({
-      title: 'PRODUCTION prerender-spa-plugin',
+      title: '有翼云',
       template: 'index.html',
       filename: path.resolve(__dirname, 'dist/index.html'),
       favicon: 'favicon.ico'
