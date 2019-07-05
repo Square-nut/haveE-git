@@ -3,6 +3,7 @@
 export default [{
   path: '/',
   component: require('@view/index').default,
+  redirect: 'home',
   children: [{
     path: 'home',
     component: require('@view/home').default
@@ -19,4 +20,7 @@ export default [{
     path: 'agent-result',
     component: require('@view/agent-result').default
   }]
+}, {
+  path: '*',
+  component: require('@view/home').default
 }]

@@ -37,7 +37,7 @@
              class="product-center">关于有翼</a></li>
         <li class="last login_common"><a target="_blank"
              class="btn-login"
-             href="">登录</a>
+             href="/">登录</a>
         </li>
         <li class=" last register_common"><a target="_blank"
              href="/register">注册</a></li>
