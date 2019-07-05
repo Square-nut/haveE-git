@@ -175,4 +175,5 @@ export default {
 </script>
 
 <style>
+@import "../ui/login.css";
 </style>
