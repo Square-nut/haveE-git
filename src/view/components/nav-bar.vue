@@ -40,7 +40,7 @@
              href="">登录</a>
         </li>
         <li class=" last register_common"><a target="_blank"
-             href="/register.html">注册</a></li>
+             href="/register">注册</a></li>
       </ul>
     </div>
   </div>
